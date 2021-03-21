@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const logger = require("morgan");
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 app.use(logger("dev"));
 
@@ -22,8 +22,8 @@ db.once('open', function() {
 
 // routes
 app.use(require("./routes/api-routes.js"));
-app.use(require("./routes/view.js"));
+app.use(require("./routes/html-routes.js"));
 
 app.listen(PORT, () => {
-  console.log(`App running on port ${PORT}! Visit http://localhost:%s/ in your browser`);
+  console.log(`App running on port ${PORT}! Visit http://localhost:${PORT}/ in your browser`);
 });
