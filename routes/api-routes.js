@@ -14,6 +14,9 @@ router.get('/api/workouts', (req, res) => {
     .then((workoutDBs) => {
       res.json(workoutDBs);
     })
+    .catch((err) => {
+      res.json(err);
+    });
 });
 
 router.get('/api/workouts/range', (req, res) => {
@@ -32,6 +35,9 @@ router.get('/api/workouts/range', (req, res) => {
       console.log(workoutDBs);
       res.json(workoutDBs);
     })
+    .catch((err) => {
+      res.json(err);
+    });
 });
 
 router.put('/api/workouts/:id', ({ body, params }, res) => {
@@ -43,6 +49,9 @@ router.put('/api/workouts/:id', ({ body, params }, res) => {
     .then((workoutDB) => {
       res.json(workoutDB);
     })
+    .catch((err) => {
+      res.json(err);
+    });
 });
 
 router.post('/api/workouts', (req, res) => {
@@ -50,6 +59,9 @@ router.post('/api/workouts', (req, res) => {
     .then((workoutDB) => {
       res.json(workoutDB);
     })
+    .catch((err) => {
+      res.json(err);
+    });
 });
 
 router.delete('/api/workouts', ({ body }, res) => {
@@ -57,6 +69,9 @@ router.delete('/api/workouts', ({ body }, res) => {
     .then(() => {
       res.json(true);
     })
+    .catch((err) => {
+      res.json(err);
+    });
 });
 
 module.exports = router;
