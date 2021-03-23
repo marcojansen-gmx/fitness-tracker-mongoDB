@@ -25,7 +25,7 @@ The user should be able to:
 
 You can add an exercise or complete an exercise on the landing page and review your statistic on the dashboard
 1. ### Index Page 
-  * ![Index Page](https://github.com/marcojansen-gmx/Project2-Who-let-the-dogs-out-/blob/main/public/IndexPageScreenshot.png?raw=true)
+  * ![Index Page](https://github.com/marcojansen-gmx/fitness-tracker-mongoDB/blob/main/assets/index.png?raw=true)
 ## Credits
 ------------ | 
 Marco 
